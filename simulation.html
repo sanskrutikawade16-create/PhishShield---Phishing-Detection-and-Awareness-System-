@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhishShield | Simulation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">PHISH<span>SHIELD</span></div>
+  <nav><a href="index.html">Home</a><a href="simulation.html" class="active">Simulation</a><a href="results.html">Results</a><a href="about.html">About</a></nav>
+</header>
+
+<main class="page">
+  <div class="notice">
+    <strong>SIMULATION NOTICE:</strong> This is a controlled educational exercise. Do not enter any real credentials.
+  </div>
+
+  <div class="email-window">
+    <div class="mail-top"><span>● ● ●</span><span>Awareness Training Mail</span></div>
+    <div class="email-meta">
+      <div><b>From:</b> IT Support &lt;support@secure-account.example&gt;</div>
+      <div><b>Subject:</b> ⚠ Action Required: Password Reset</div>
+      <div><b>Received:</b> Today, 10:15 AM</div>
+    </div>
+    <div class="email-body">
+      <p>Hello User,</p>
+      <p>Our security system detected unusual activity on your account. To prevent temporary suspension, please verify your account immediately.</p>
+      <p><a href="training-login.html" id="phishLink" class="fake-link">Verify Account</a></p>
+      <p>If you do not verify within 24 hours, access may be restricted.</p>
+      <p>Regards,<br>IT Support Team</p>
+    </div>
+  </div>
+
+  <section class="decision">
+    <h2>What would you do?</h2>
+    <p>Choose the action you would take after receiving this message.</p>
+    <div class="choice-grid">
+      <button onclick="choose('report')">🚩 Report as Phishing</button>
+      <button onclick="choose('verify')">🔗 Click Verify Account</button>
+      <button onclick="choose('ignore')">🗑 Delete / Ignore</button>
+    </div>
+    <div id="feedback" class="feedback"></div>
+  </section>
+</main>
+
+<footer>Educational simulation only · No credentials are collected</footer>
+<script src="script.js"></script>
+</body>
+</html>

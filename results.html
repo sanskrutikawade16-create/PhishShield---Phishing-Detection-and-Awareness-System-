@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhishShield | Results</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand">PHISH<span>SHIELD</span></div><nav><a href="index.html">Home</a><a href="simulation.html">Simulation</a><a href="results.html" class="active">Results</a><a href="about.html">About</a></nav></header>
+
+<main class="page">
+  <p class="tag">LOCAL DEMONSTRATION DASHBOARD</p>
+  <h1>Simulation Results</h1>
+  <p class="lead small">These counters are stored only in this browser using localStorage. They are not uploaded to a server.</p>
+  <div class="stats">
+    <div><span id="reports">0</span><small>Reported</small></div>
+    <div><span id="clicks">0</span><small>Clicked</small></div>
+    <div><span id="ignores">0</span><small>Ignored</small></div>
+    <div><span id="lessons">0</span><small>Lessons Viewed</small></div>
+  </div>
+  <section class="tips">
+    <h2>Recommended Countermeasures</h2>
+    <ul>
+      <li>Check the sender address and domain carefully.</li>
+      <li>Do not click unexpected password-reset links.</li>
+      <li>Verify requests through an official app or known contact method.</li>
+      <li>Use MFA and strong, unique passwords.</li>
+      <li>Report suspicious messages to your organization.</li>
+      <li>Keep browsers, operating systems and security tools updated.</li>
+    </ul>
+  </section>
+  <button class="btn secondary" onclick="resetData()">Reset Local Demo Data</button>
+</main>
+<footer>For academic demonstration and awareness training.</footer>
+<script src="script.js"></script>
+</body>
+</html>
